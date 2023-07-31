@@ -1,9 +1,9 @@
  В рамках БД "онлайн-магазин" напишите след/запросы:
   1.Вывести название и стоимость в USD одного самого дорогого проданного товара
-SELECT ProductName,Price*1.1 AS Price_USD
-FROM [Products]
-ORDER By Price DESC
-LIMIT 1
+SELECT ProductName,Price*1.1 AS Price_USD 
+FROM OrderDetails 
+JOIN Products ON OrderDetails.ProductID=Products.ProductID
+ORDER By Price DESC LIMIT 1
   
   2.Вывести два самых дорогих товара из категории Beverages из USA
 SELECT *
