@@ -65,4 +65,4 @@ map_id (первичный ключ) - уникальный идентифика
 map_name - название карты
 map_data - данные карты (например фон, тема)
 
-![Image alt](https://github.com/sainozhenko/bd_hw/raw/main/https://github.com/Sainozhenko/BD_HW/blob/main/Screenshot%202023-08-01%20231314.png/Screenshot 2023-08-01 231314.png)
+![Image alt](https://github.com/sainozhenko/bd_hw/raw/main/https://github.com/Sainozhenko/BD_HW/blob/main/image.png)
