@@ -7,7 +7,7 @@ WHERE ShipperName='Speedy Express' AND Customers.Country='Brazil'
 
 2.Вывести среднюю стоимость проданного в Germany товара
 SELECT AVG(Price)
-FROM [Products]
+FROM OrdersDetails
 Join Suppliers ON Products.SupplierID=Suppliers.SupplierID
 WHERE Suppliers.Country='Germany'
 
@@ -26,7 +26,7 @@ Order By Price ASC
 LIMIT 2
 
 5.Применить наценку в 15% ко всем товарам из категории 4
-SELECT Price*1.15 as NewPrice,*
+UPDATE Price*1.15 as NewPrice,*
 FROM [Products]
 Join Categories ON Categories.CategoryID=Products.CategoryID
 WHERE Categories.CategoryID=4
